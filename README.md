@@ -5,7 +5,7 @@
 
 
 ## Screenshots
-![Example screenshot]()
+![Example screenshot](img/screenshot.png)
 
 ## Contents
 * [Home](#home)
@@ -28,6 +28,7 @@ To run this project, install it locally using:
 - cd Desktop
 - git clone https://github.com/VuDej/Math-Magicians.git
 - cd Math Magicians
+- npm install
 - cd my-app
 - npm start 
 
