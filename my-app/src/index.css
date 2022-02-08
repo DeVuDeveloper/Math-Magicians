@@ -24,7 +24,6 @@ body {
 }
 
 .display {
-  margin-top: 10px;
   position: relative;
   color: #fff;
   font-size: 26px;
@@ -32,9 +31,7 @@ body {
   text-align: right;
   width: 100%;
   height: 60px;
-  margin: 0;
   vertical-align: bottom;
-  text-align: right;
   overflow: hidden;
   text-overflow: ellipsis;
   background-color: #817d7d;
@@ -51,7 +48,6 @@ body {
 button {
   border: none;
   cursor: pointer;
-  font-size: 24px;
   margin: 1px;
   height: 50px;
   width: 100px;
