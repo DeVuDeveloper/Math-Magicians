@@ -1,96 +1,112 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-    this.calculation = this.calculation.bind(this);
-  }
+const Calculator = () => {
+  const [obj, SetState] = useState({});
+  const calculation = (e) => {
+    SetState(calculate(obj, e.target.innerText));
+  };
 
-  componentDidMount() {
-    this.setState({
-      total: null,
-      next: null,
-      operation: null,
-    });
-  }
+  const { total, next, operation } = obj;
+  const display = next || operation || total || 0;
 
-  shouldComponentUpdate() {
-    return true;
-  }
+  const numbers = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0];
+  const operators = ['÷', 'x', '-', '+', '='];
+  const ids = {
+    7: 'seven',
+    8: 'eight',
+    9: 'nine',
+    4: 'four',
+    5: 'five',
+    6: 'six',
+    1: 'one',
+    2: 'two',
+    3: 'three',
+    0: 'zero',
+    '/': 'divide',
+    '*': 'multiply',
+    '-': 'subtract',
+    '+': 'add',
+  };
 
-  calculation(event) {
-    this.setState((obj) => calculate(obj, event.target.innerText));
-  }
+  return (
+    <section className="calculator-container">
+      <div
+        id="display"
+        className="display"
+      >
+        { display }
+      </div>
 
-  render() {
-    const { total, next, operation } = this.state;
-    const display = next || operation || total || 0;
+      <div className="numbers-container">
+        <button
+          className="clear-display"
+          type="button"
+          id="clear"
+          onClick={calculation}
+        >
+          AC
+        </button>
 
-    const numbers = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0];
-    const operators = ['÷', 'x', '-', '+', '='];
-    const ids = {
-      7: 'seven',
-      8: 'eight',
-      9: 'nine',
-      4: 'four',
-      5: 'five',
-      6: 'six',
-      1: 'one',
-      2: 'two',
-      3: 'three',
-      0: 'zero',
-      '/': 'divide',
-      '*': 'multiply',
-      '-': 'subtract',
-      '+': 'add',
-    };
+        <button
+          className="plus-minus"
+          id="pm"
+          type="button"
+          onClick={calculation}
+        >
+          +/-
+        </button>
 
-    return (
-      <section className="calculator-container">
-        <div id="display" className="display">{ display }</div>
+        <button
+          className="percent"
+          id="percents"
+          type="button"
+          onClick={calculation}
+        >
+          %
+        </button>
 
-        <div className="numbers-container">
-          <button className="clear-display" type="button" id="clear" onClick={this.calculation}>
-            AC
-          </button>
+        {
+            numbers.map((number) => (
+              <button
+                type="button"
+                className={`numbers ${number === 0}`}
+                key={number}
+                id={ids[number]}
+                onClick={calculation}
+              >
+                { number }
+              </button>
+            ))
+        }
 
-          <button className="plus-minus" id="pm" type="button" onClick={this.calculation}>
-            +/-
-          </button>
+        <button
+          className="decimals"
+          id="decimal"
+          type="button"
+          onClick={calculation}
+        >
+          .
+        </button>
+      </div>
 
-          <button className="percent" id="percents" type="button" onClick={this.calculation}>
-            %
-          </button>
+      <div className="operators-container">
+        {
+            operators.map((operator) => (
+              <button
+                className="orange operators"
+                type="button"
+                onClick={calculation}
+                key={operator}
+                id={ids[operator]}
+              >
+                { operator }
+              </button>
+            ))
+        }
+      </div>
+    </section>
+  );
+};
 
-          {numbers.map((number) => (
-            <button
-              type="button"
-              className={`numbers ${number === 0}`}
-              key={number}
-              id={ids[number]}
-              onClick={this.calculation}
-            >
-              {number}
-            </button>
-          ))}
-
-          <button className="decimals" id="decimal" type="button" onClick={this.calculation}>
-            .
-          </button>
-        </div>
-
-        <div className="operators-container">
-          {operators.map((operator) => (
-            <button className="orange operators" type="button" onClick={this.calculation} key={operator} id={ids[operator]}>
-              {operator}
-              {' '}
-            </button>
-          ))}
-        </div>
-      </section>
-    );
-  }
-}
 export default Calculator;
