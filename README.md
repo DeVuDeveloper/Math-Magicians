@@ -5,7 +5,7 @@
 
 
 ## Screenshots
-![Example screenshot]()
+![Example screenshot](img/screenshot.png)
 
 ## Contents
 * [Home](#home)
