@@ -25,7 +25,7 @@ class Calculator extends Component {
   }
 
   render() {
-    const { next, operation, total } = this.state;
+    const { total, next, operation } = this.state;
     const display = next || operation || total || 0;
 
     const numbers = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0];
