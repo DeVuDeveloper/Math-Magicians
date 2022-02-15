@@ -4,14 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #383734;
-  font-family: "Roboto", sans-serif;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .calculator-container {
   position: relative;

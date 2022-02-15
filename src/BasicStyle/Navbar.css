@@ -1,0 +1,33 @@
+ * {
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d9d8e7;
+  border: 2px solid rgb(84, 131, 233);
+  padding: 20px 100px;
+}
+
+ .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
