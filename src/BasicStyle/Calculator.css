@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.95%, rgba(38, 38, 38, 0.9) 41.94%), url('/img/math.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 
 .calculator-container {
   position: relative;
@@ -14,13 +20,18 @@
   width: 408px;
   height: 320px;
   left: 50%;
-  top: 20vmax;
+  top: 25vmax;
 }
 
 .title {
   position: relative;
   top: 15vh;
-  left: 10%;
+  left: 8%;
+  color: #fbeec1;
+  font-family: 'Lato', sans-serif;
+  background: #272727;
+  padding: 10px 5px;
+  width: 22%;
 }
 
 .display {

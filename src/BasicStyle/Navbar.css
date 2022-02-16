@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+ 
  * {
    margin: 0;
    padding: 0;
@@ -10,8 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #d9d8e7;
-  border: 2px solid rgb(84, 131, 233);
+  background-color: #272727;
   padding: 20px 100px;
 }
 
@@ -22,12 +24,17 @@
   gap: 50px;
 }
 
-.navbar ul li {
+.link {
   list-style: none;
+  color: #fbeec1;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
 }
 
-.navbar ul li a {
-  font-size: 20px;
-  text-decoration: none;
-  color: #fff;
+.header {
+  font-size: 30px;
+  font-family: 'Neonderthaw', sans-serif;
+  font-weight: 500;
+  color: #fbeec1;
 }

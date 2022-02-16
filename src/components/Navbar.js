@@ -29,8 +29,8 @@ const Navbar = () => {
           <li key={link.id} className="link">
             <NavLink
               style={({ isActive }) => ({
-                color: isActive ? '#fff' : '#545e6f',
-                background: isActive ? '#7600dc' : '#f0f0f0',
+                paddingBottom: isActive ? '10px' : '5px',
+                borderBottom: isActive ? '3px solid #fbeec1' : '2px solid #376e6f',
               })}
               to={link.path}
               className="link"

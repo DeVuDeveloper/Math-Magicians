@@ -1,7 +1,15 @@
 .quote-wrapper {
-    padding: 100px;
-    margin-top: 50px;
-    color: rgb(94, 91, 91);
+  padding: 100px;
+  margin-top: 28%;
+  color: rgb(94, 91, 91);
 }
 
-
+.quote {
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  background: #272727;
+  padding: 10px 5px;
+  width: 100%;
+}
