@@ -11,6 +11,7 @@
   background: #272727;
   padding: 10px 20px;
   width: 60%;
+  text-align: center;
 }
 
 .home p {
@@ -19,6 +20,7 @@
   font-size: 26px;
   color: #fbeec1;
   background: #272727;
-  padding: 10px 5px;
+  padding: 10px 100px;
   width: 100%;
+  text-align: center;
 }
