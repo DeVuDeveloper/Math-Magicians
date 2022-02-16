@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
+import '../BasicStyle/Calculator.css';
 
 const Calculator = () => {
   const [obj, SetState] = useState({});
@@ -30,8 +31,8 @@ const Calculator = () => {
   };
 
   return (
-    <main className="calculator-container">
-      <div className="calc-title">
+    <main className="calculator-wrapper">
+      <div className="title">
         <h1>Let&apos;s do some math!</h1>
       </div>
       <section className="calculator-container">

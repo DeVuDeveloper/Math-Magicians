@@ -3,7 +3,7 @@ import '../BasicStyle/Home.css';
 
 const Home = () => (
   <div className="home">
-    <h2>Welcome to our page</h2>
+    <h1>Welcome to my page !</h1>
 
     <p>Hi, This site is intended for enthusiastic mathematicians.</p>
     <p>This is a Single Page Application made with React.</p>

@@ -13,6 +13,14 @@
   flex-wrap: wrap;
   width: 408px;
   height: 320px;
+  left: 50%;
+  top: 20vmax;
+}
+
+.title {
+  position: relative;
+  top: 15vh;
+  left: 10%;
 }
 
 .display {
