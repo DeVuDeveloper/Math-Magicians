@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
- 
- * {
-   margin: 0;
-   padding: 0;
- }
- 
- .navbar {
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
   position: fixed;
   width: 100%;
   top: 0;
@@ -17,7 +17,7 @@
   padding: 20px 100px;
 }
 
- .navbar ul {
+.navbar ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
