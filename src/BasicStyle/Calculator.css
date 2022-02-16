@@ -5,12 +5,10 @@
 }
 
 body {
-  background-color: #383734;
-  font-family: "Roboto", sans-serif;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.95%, rgba(38, 38, 38, 0.9) 41.94%), url('/img/math.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .calculator-container {
@@ -21,6 +19,19 @@ body {
   flex-wrap: wrap;
   width: 408px;
   height: 320px;
+  left: 50%;
+  top: 25vmax;
+}
+
+.title {
+  position: relative;
+  top: 15vh;
+  left: 8%;
+  color: #fbeec1;
+  font-family: 'Lato', sans-serif;
+  background: #272727;
+  padding: 10px 100px;
+  width: 22%;
 }
 
 .display {

@@ -1,8 +1,6 @@
 # Math Magicians
 
-
-## Live preview [here]( https://vudej.github.io/Math-Magicians/). 
-
+<!-- ## Live preview [here]( https://vudej.github.io/Math-Magicians/).  -->
 
 ## Screenshots
 ![Example screenshot](img/screenshot.png)
@@ -28,7 +26,6 @@ To run this project, install it locally using:
 - cd Desktop
 - git clone https://github.com/VuDej/Math-Magicians.git
 - cd Math Magicians
-- cd my-app
 - npm start 
 
 ## Author 1

@@ -1,0 +1,26 @@
+.home {
+  padding: 300px;
+}
+
+.home h1 {
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  color: #fbeec1;
+  margin-bottom: 100px;
+  background: #272727;
+  padding: 10px 20px;
+  width: 60%;
+  text-align: center;
+}
+
+.home p {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 26px;
+  color: #fbeec1;
+  background: #272727;
+  padding: 10px 100px;
+  width: 100%;
+  text-align: center;
+}
