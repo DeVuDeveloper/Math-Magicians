@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
+import '../BasicStyle/Calculator.css';
 
 const Calculator = () => {
   const [obj, SetState] = useState({});
@@ -30,43 +31,47 @@ const Calculator = () => {
   };
 
   return (
-    <section className="calculator-container">
-      <div
-        id="display"
-        className="display"
-      >
-        { display }
+    <main className="calculator-wrapper">
+      <div className="title">
+        <h1>Let&apos;s do some math!</h1>
       </div>
-
-      <div className="numbers-container">
-        <button
-          className="clear-display"
-          type="button"
-          id="clear"
-          onClick={calculation}
+      <section className="calculator-container">
+        <div
+          id="display"
+          className="display"
         >
-          AC
-        </button>
+          { display }
+        </div>
 
-        <button
-          className="plus-minus"
-          id="pm"
-          type="button"
-          onClick={calculation}
-        >
-          +/-
-        </button>
+        <div className="numbers-container">
+          <button
+            className="clear-display"
+            type="button"
+            id="clear"
+            onClick={calculation}
+          >
+            AC
+          </button>
 
-        <button
-          className="percent"
-          id="percents"
-          type="button"
-          onClick={calculation}
-        >
-          %
-        </button>
+          <button
+            className="plus-minus"
+            id="pm"
+            type="button"
+            onClick={calculation}
+          >
+            +/-
+          </button>
 
-        {
+          <button
+            className="percent"
+            id="percents"
+            type="button"
+            onClick={calculation}
+          >
+            %
+          </button>
+
+          {
             numbers.map((number) => (
               <button
                 type="button"
@@ -80,18 +85,18 @@ const Calculator = () => {
             ))
         }
 
-        <button
-          className="decimals"
-          id="decimal"
-          type="button"
-          onClick={calculation}
-        >
-          .
-        </button>
-      </div>
+          <button
+            className="decimals"
+            id="decimal"
+            type="button"
+            onClick={calculation}
+          >
+            .
+          </button>
+        </div>
 
-      <div className="operators-container">
-        {
+        <div className="operators-container">
+          {
             operators.map((operator) => (
               <button
                 className="orange operators"
@@ -104,8 +109,9 @@ const Calculator = () => {
               </button>
             ))
         }
-      </div>
-    </section>
+        </div>
+      </section>
+    </main>
   );
 };
 
