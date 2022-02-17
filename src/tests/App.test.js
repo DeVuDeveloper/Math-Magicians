@@ -25,9 +25,9 @@ describe('testing components', () => {
     screen.getByText('Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. -William Paul Thurston');
   });
   it('if App is displaying right', () => {
-    const tree = renderer
+    const display = renderer
       .create(<Mock />)
       .toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(display).toMatchSnapshot();
   });
 });
