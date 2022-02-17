@@ -1,6 +1,6 @@
 # Math Magicians
 
-<!-- ## Live preview [here]( https://vudej.github.io/Math-Magicians/).  -->
+## Live preview [here]( https://vudej.github.io/Math-Magicians/).
 
 ## Screenshots
 ![Example screenshot](img/screenshot.png)
