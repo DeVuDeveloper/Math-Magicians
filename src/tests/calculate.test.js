@@ -1,4 +1,4 @@
-import calculate from './calculate';
+import calculate from '../logic/calculate';
 
 describe('Calculate', () => {
   const obj = {

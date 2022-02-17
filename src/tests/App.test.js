@@ -1,8 +1,33 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 import App from '../App';
 
-test('renders Math magicians link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Math magicians/i);
-  expect(linkElement).toBeInTheDocument();
+const Mock = () => (
+
+  <App />
+
+);
+
+describe('testing components', () => {
+  it('if render Title', () => {
+    render(<App />);
+    screen.getByText('Welcome to my page !');
+  });
+  it('if link calculator works ', () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByText('Calculator'));
+    screen.getByText("Let's do some math!");
+  });
+  it('if link Quotes works', () => {
+    render(<App />);
+    fireEvent.click(screen.getByText('Quotes'));
+    screen.getByText('Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. -William Paul Thurston');
+  });
+  it('if App is displaying right', () => {
+    const tree = renderer
+      .create(<Mock />)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
