@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -11,37 +12,39 @@ body {
   height: 100vh;
 }
 
+
+
 .calculator-container {
   position: relative;
+  top: 45vh;
   background-color: rgb(204, 198, 198);
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-wrap: wrap;
-  width: 408px;
-  height: 320px;
-  left: 50%;
-  top: 25vmax;
-}
+  width: 358px;
+  height: 235px;
+} 
 
 .title {
   position: relative;
-  top: 15vh;
-  left: 8%;
+  top: 25vh;
+  text-align: center;
   color: #fbeec1;
   font-family: 'Lato', sans-serif;
+  font-size: 15px;
   background: #272727;
-  padding: 10px 100px;
-  width: 22%;
+  left: 10px;
 }
 
 .display {
   position: relative;
   color: #fff;
   font-size: 21px;
-  padding: 20px 10px;
   text-align: right;
+  padding: 12px;
+  margin: auto;
   width: 100%;
-  height: 56px;
+  height: 26px;
   vertical-align: bottom;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -60,8 +63,8 @@ button {
   border: none;
   cursor: pointer;
   margin: 1px;
-  height: 50px;
-  width: 100px;
+  height: 35px;
+  width: 87px;
   font-size: 17px;
 }
 
@@ -71,7 +74,76 @@ button.orange {
 }
 
 #zero {
-  width: 202px;
+  width: 177px;
+}
+
+@media screen and (min-width: 680px) {
+  .calculator-container {
+    position: relative;
+    background-color: rgb(204, 198, 198);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    width: 408px;
+    height: 320px;
+    left: 50%;
+    top: 25vmax;
+  } 
+
+  .calculator-wrapper {
+    position: relative;
+  }
+  
+  .title {
+    position: relative;
+    top: 25vh;
+    text-align: center;
+    color: #fbeec1;
+    font-family: 'Lato', sans-serif;
+    background: #272727;
+    left: 20px;
+  }
+  
+  .display {
+    position: relative;
+    color: #fff;
+    font-size: 21px;
+   
+    text-align: right;
+    width: 100%;
+    height: 56px;
+    vertical-align: bottom;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #817d7d;
+  }
+  
+  .numbers-container {
+    width: 75%;
+  }
+  
+  .operators-container {
+    width: 25%;
+  }
+  
+  button {
+    border: none;
+    cursor: pointer;
+    margin: 1px;
+    height: 50px;
+    width: 100px;
+    font-size: 17px;
+  }
+  
+  button.orange {
+    background-color: #ee9406;
+    color: #000;
+  }
+  
+  #zero {
+    width: 202px;
+  }
+  
 }
 
 button:hover {

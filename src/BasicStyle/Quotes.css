@@ -1,15 +1,36 @@
+.quotes {
+  padding: 0 30px;
+}
+
 .quote-wrapper {
-  padding: 100px;
-  margin-top: 28%;
+  margin-top: 88%;
   color: rgb(94, 91, 91);
 }
 
 .quote {
-  font-size: 30px;
+  font-size: 17px;
   font-family: "Lato", sans-serif;
   font-weight: 600;
   color: #fff;
   background: #272727;
-  padding: 10px 70px;
   width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 680px) {
+  .navbar {
+    padding: 20px 100px;
+  }
+
+  .header {
+    font-size: 30px;
+  }
+
+  .link {
+    list-style: none;
+    color: #fbeec1;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+  }
 }

@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import '../BasicStyle/Quotes.css';
 
 const Quotes = () => (
-  <div>
+  <div className="quotes">
     <Navbar />
     <div className="quote-wrapper">
       <h2 className="quote">
