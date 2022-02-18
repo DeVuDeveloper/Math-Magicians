@@ -1,8 +1,8 @@
 # Math Magicians
 
-## Live preview [here]
-  # Heroku ( https://sheltered-citadel-41021.herokuapp.com/).
-  # Netlify ( https://frosty-raman-289022.netlify.app/).
+## Live preview 
+  # Heroku [here](https://sheltered-citadel-41021.herokuapp.com/).
+  # Netlify [here](https://frosty-raman-289022.netlify.app/).
 
 
 ## Screenshots
