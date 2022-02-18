@@ -1,5 +1,5 @@
 .quotes {
-  padding: 0 30px;
+  overflow: hidden;
 }
 
 .quote-wrapper {

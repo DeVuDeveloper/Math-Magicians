@@ -1,5 +1,6 @@
 .home {
   padding: 0 30px;
+  overflow: hidden;
 }
 
 .home h1 {
@@ -9,9 +10,10 @@
   color: #fbeec1;
   margin-bottom: 100px;
   background: #272727;
-  padding: 10px 20px;
+  padding: 10px 10px;
   margin-top: 210px;;
   text-align: center;
+  width: 100%;
 }
 
 .home p {
