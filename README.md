@@ -1,6 +1,6 @@
 # Math Magicians
 
-## Live preview [here]( https://vudej.github.io/Math-Magicians/).
+## Live preview [here]( https://sheltered-citadel-41021.herokuapp.com/).
 
 ## Screenshots
 ![Example screenshot](img/screenshot.png)
