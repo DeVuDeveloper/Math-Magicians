@@ -9,7 +9,6 @@
   font-weight: 600;
   color: #fbeec1;
   margin-bottom: 100px;
-  background: #272727;
   padding: 10px 10px;
   margin-top: 210px;;
   text-align: center;
@@ -21,41 +20,25 @@
   font-weight: bold;
   font-size: 16px;
   color: #fbeec1;
-  background: #272727;
   text-align: center;
   width: 100%;
  
 }
 
-
 @media screen and (min-width: 680px) {
   .home {
-    padding: 300px;
+    padding-top: 50px;
   }
 
   .home h1 {
     font-size: 40px;
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
-    color: #fbeec1;
-    margin-bottom: 100px;
-    background: #272727;
     padding: 10px 20px;
-    width: 60%;
-    text-align: center;
   }
 
   .home p {
     margin-top: 15px;
-    font-weight: bold;
-    font-size: 26px;
-    color: #fbeec1;
-    background: #272727;
     padding: 10px 100px;
-    width: 100%;
-    text-align: center;
+    font-size: 24px;
   }
-  
-  
 }
 

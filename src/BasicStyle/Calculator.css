@@ -34,7 +34,6 @@ main {
   color: #fbeec1;
   font-family: 'Lato', sans-serif;
   font-size: 15px;
-  background: #272727;
 }
 
 .display {
@@ -79,6 +78,10 @@ button.orange {
 }
 
 @media screen and (min-width: 680px) {
+  .navbar {
+    padding: 20px 100px;
+  }
+
   .calculator-container {
     position: relative;
     background-color: rgb(204, 198, 198);
@@ -88,28 +91,20 @@ button.orange {
     width: 408px;
     height: 320px;
     left: 50%;
-    top: 25vmax;
+    top: 30vmax;
   } 
 
-  .calculator-wrapper {
-    position: relative;
-  }
-  
   .title {
-    position: relative;
     top: 25vh;
-    text-align: center;
-    color: #fbeec1;
-    font-family: 'Lato', sans-serif;
-    background: #272727;
-    left: 20px;
+    text-align: left;
+    padding: 20px 50px;
+    font-size: 27px;
   }
   
   .display {
     position: relative;
     color: #fff;
     font-size: 21px;
-   
     text-align: right;
     width: 100%;
     height: 56px;
