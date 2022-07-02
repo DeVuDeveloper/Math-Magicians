@@ -49,10 +49,6 @@ Feel free to check the [issues page](https://github.com/VuDej/Math-Magicians/iss
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- A special thanks to Microverse.
-
 ## 📝 License
 
 This project is [MIT](LICENSE) licensed.
